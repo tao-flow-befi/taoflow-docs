@@ -1,4 +1,6 @@
 site_name: TaoFlow Docs
+extra_css:
+  - assets/css/extra.css
 nav:
   - Home: index.md
   - API: api.md

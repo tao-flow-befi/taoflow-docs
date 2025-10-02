@@ -1,0 +1,84 @@
+/* Extra styles for TaoFlow docs to remove right gutter and make content use available width */
+
+/* Make main content area use more width and avoid large right whitespace */
+/* Target multiple common MkDocs theme content wrappers */
+.md-main,
+.md-content,
+.md-content__inner,
+.wy-nav-content,
+.pf-content,
+#main {
+  max-width: 100% !important; /* allow content to use full available width */
+}
+
+/* Reduce default right padding on content wrappers */
+.md-content,
+.md-content__inner,
+.wy-nav-content,
+#main {
+  padding-right: 2rem !important;
+}
+
+/* Ensure images don't overflow and scale down */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Remove horizontal overflow and hide any accidental scrollbar */
+/* Prevent horizontal overflow caused by large images or elements */
+body,
+.md-main,
+.md-content,
+.md-content__inner,
+.wy-nav-content,
+#main {
+  overflow-x: hidden;
+}
+
+/* Also cap any wide code blocks or preformatted elements */
+pre, code, .highlight {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.side-by-side {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0.5rem 0 1.5rem 0;
+}
+.side-by-side img {
+  width: 25%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+
+/* Side-by-side images for walkthrough screenshots */
+.side-by-side-31 {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+/* First image larger (3 parts) and second image smaller (1 part) */
+.side-by-side-31 img:first-child {
+  width: 65%;
+}
+.side-by-side-31 img:last-child {
+  width: 18%;
+}
+@media (max-width: 700px) {
+  .side-by-side {
+    flex-direction: column;
+  }
+  .side-by-side img {
+    width: 100%;
+  }
+}

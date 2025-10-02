@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/theme.css" />
     <link rel="stylesheet" href="css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="assets/css/extra.css" rel="stylesheet" />
     
       <script>
         // Current page data
@@ -42,11 +43,61 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">Home</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#project-layout">Project layout</a>
+    <li class="toctree-l2"><a class="reference internal" href="#1-get-started">1. Get started</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#sub-title">Sub title</a>
+    <li class="toctree-l3"><a class="reference internal" href="#1-setup-wallet-extension">1) Setup wallet extension</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#1-create-a-wallet-account">(1) Create a wallet account</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#2-enable-subtensor-evm-mainnet">(2) Enable Subtensor EVM mainnet</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#3-connect-your-wallet-to-taoflow">(3) Connect your wallet to TaoFlow</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#2-start-as-a-depositor">2) Start as a depositor</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#3-start-as-a-trader">3) Start as a trader</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#4-subnets">4) Subnets</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#1-subnets-page">(1) Subnets page</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#2-subnet-detail-page">(2) Subnet detail page</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-core-concepts-for-taoflow-users">2. Core concepts for TaoFlow users</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#1-taoflow-pool-liquidity-pool">1) TaoFlow pool (liquidity pool)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#2-about-depositors-liquidity-providers">2) About depositors (liquidity providers)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#3-about-traders">3) About traders</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-references">3. References</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-faq">4. FAQ</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#1-what-is-taoflow">1) What is TaoFlow?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#2-why-is-taoflow-useful-for-users">2) Why is TaoFlow useful for users?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#3-i-am-a-depositor-and-have-deposited-tao-can-i-withdraw-my-tao-anytime">3) I am a depositor and have deposited TAO. Can I withdraw my TAO anytime?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#4-i-am-a-trader-and-have-collateral-can-i-withdraw-my-collateral-anytime">4) I am a trader and have collateral. Can I withdraw my collateral anytime?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#5-how-is-yield-generated-on-taoflow">5) How is yield generated on TaoFlow?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#6-what-happens-if-a-trader-loses-money">6) What happens if a trader loses money?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#7-how-much-can-traders-borrow">7) How much can traders borrow?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#8-do-i-need-tao-to-use-the-platform">8) Do I need TAO to use the platform?</a>
     </li>
         </ul>
     </li>
@@ -81,21 +132,197 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="welcome-to-taoflow-v20">Welcome to TaoFlow v2.0</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+<p>TaoFlow is a DeFi platform on the Bittensor network that enables lending, borrowing, and leveraged trading using TAO as the primary collateral and tradable asset.</p>
+<h2 id="1-get-started">1. Get started</h2>
+<h3 id="1-setup-wallet-extension">1) Setup wallet extension</h3>
+<p>Connect to the Subtensor EVM mainnet using standard EVM-compatible wallets.</p>
+<p>TaoFlow runs on the Subtensor EVM-compatible blockchain, so you can use standard Ethereum wallets to interact with the network. Use your preferred wallet to store TAO, connect to TaoFlow, and trade.</p>
+<p><strong>Popular compatible wallets include:</strong></p>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li><a href="https://chromewebstore.google.com/detail/talisman-wallet/fijngjgcjhjmmpcmkeiomlglpeiijkld">Talisman</a></li>
+<li><a href="https://chromewebstore.google.com/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en">MetaMask</a></li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
-<h3 id="sub-title">Sub title</h3>
+<h4 id="1-create-a-wallet-account">(1) Create a wallet account</h4>
+<p><strong>Create wallet account</strong>
+<img alt="Create Account" src="img/create-wallet-account.png" /></p>
+<p><strong>Select account type</strong>
+<img alt="Select Account Type" src="img/create-wallet-account-type.png" /></p>
+<p><strong>Insert account name and create</strong>
+<img alt="Create Wallet Confirm" src="img/create-wallet-confirm.png" /></p>
+<p><strong>Save your recovery phrase</strong>
+<img alt="Save recovery phrase" src="img/create-wallet-recovery-phrase.png" /></p>
+<h4 id="2-enable-subtensor-evm-mainnet">(2) Enable Subtensor EVM mainnet</h4>
+<h5 id="network-details">Network details</h5>
+<h6 id="subtensor-evm-mainnet">Subtensor EVM mainnet</h6>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Setting</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Chain ID</td>
+<td style="text-align: left;">964</td>
+</tr>
+<tr>
+<td style="text-align: left;">Chain name</td>
+<td style="text-align: left;">Subtensor EVM</td>
+</tr>
+<tr>
+<td style="text-align: left;">RPC URL</td>
+<td style="text-align: left;">https://lite.chain.opentensor.ai</td>
+</tr>
+<tr>
+<td style="text-align: left;">Currency</td>
+<td style="text-align: left;">TAO</td>
+</tr>
+</tbody>
+</table>
+<h6 id="subtensor-evm-testnet">Subtensor EVM testnet</h6>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Setting</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Chain ID</td>
+<td style="text-align: left;">945</td>
+</tr>
+<tr>
+<td style="text-align: left;">Chain name</td>
+<td style="text-align: left;">Subtensor EVM Testnet</td>
+</tr>
+<tr>
+<td style="text-align: left;">RPC URL</td>
+<td style="text-align: left;">https://test.chain.opentensor.ai</td>
+</tr>
+<tr>
+<td style="text-align: left;">Currency</td>
+<td style="text-align: left;">Test TAO</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Manage network</strong>
+<img alt="Enable Subtensor EVM1" src="img/wallet-network-setting1.png" /></p>
+<p><strong>Search for "Subtensor EVM" and enable it.</strong>
+<img alt="Enable Subtensor EVM2" src="img/wallet-network-setting2.png" /></p>
+<h4 id="3-connect-your-wallet-to-taoflow">(3) Connect your wallet to TaoFlow</h4>
+<p><strong>Connect wallet to TaoFlow</strong>
+<img alt="Connect Wallet" src="img/connect-wallet1.png" /></p>
+<p><strong>Unlock the wallet, choose the account, and connect</strong></p>
+<div class="side-by-side">
+    <img src="./img/wallet-unlock.png" alt="Unlock Wallet">
+    <img src="./img/wallet-choose-account-connect.png" alt="Connect Wallet Account">
+</div>
+
+<p><strong>Connected status</strong>
+<img alt="Wallet Connected looks" src="img/wallet-connected-looks.png" /></p>
+<h3 id="2-start-as-a-depositor">2) Start as a depositor</h3>
+<p>You can start as a depositor on TaoFlow.</p>
+<p>Visit your depositor page by clicking the "Depositor" item in the user profile dropdown menu.
+<img alt="Dropdown depositor page item" src="img/dropdown-depositor-item.png" /></p>
+<p>You can view details on the depositor detail page and deposit TAO into TaoFlow.</p>
+<div class="side-by-side-31">
+    <img src="./img/deposit.png" alt="Deposit">
+    <img src="./img/approve-deposit.png" alt="Approve Deposit">
+</div>
+
+<p>For more details about depositors, see the About Depositor section.</p>
+<p><a id="trader"></a></p>
+<h3 id="3-start-as-a-trader">3) Start as a trader</h3>
+<p>You can start as a trader on TaoFlow.</p>
+<p>Visit your trader page by clicking the "Trader" item in the user profile dropdown menu.
+<img alt="Dropdown trader page item" src="img/dropdown-trader-item.png" /></p>
+<p>You can view details on the trader detail page and add collateral to TaoFlow.</p>
+<div class="side-by-side-31">
+    <img src="./img/add-collateral.png" alt="Add Collateral">
+    <img src="./img/approve-add-collateral.png" alt="Approve Add Collateral">
+</div>
+
+<p>You can stake from the trader detail page or from a subnet detail page.
+<img alt="Stake on Trader Detail page" src="img/stake-trader-detail.png" /></p>
+<p>You can also unstake from the trader detail page or from a subnet detail page.
+<img alt="Unstake on Trader Detail page" src="img/unstake-trader-detail.png" /></p>
+<p>For more details about traders, see the About Trader section.</p>
+<h3 id="4-subnets">4) Subnets</h3>
+<h4 id="1-subnets-page">(1) Subnets page</h4>
+<p><a href="#trader"><img alt="Subnets page" src="img/subnets-page.png" /></a>
+You can view all active subnets on the Subnets page. Use the search box to filter subnets; this page lists active subnets.</p>
+<h4 id="2-subnet-detail-page">(2) Subnet detail page</h4>
+<p><img alt="Subnet Detail page" src="img/subnet-detail-page.png" /></p>
+<p>You can open a subnet detail page by clicking an item on the Subnets page.</p>
+<p>On the subnet detail page, you can view subnet price changes in the trading chart. To fetch the latest data, click the refresh button.</p>
+<p>If you connected your wallet, you can also view your trader details on this page.</p>
+<p>On this page, you can stake or unstake, similar to the trader detail page.</p>
+<p>For more details about traders, see the About Trader section.</p>
+<h2 id="2-core-concepts-for-taoflow-users">2. Core concepts for TaoFlow users</h2>
+<p>TaoFlow consists of a liquidity pool, depositors, and traders.</p>
+<h3 id="1-taoflow-pool-liquidity-pool">1) TaoFlow pool (liquidity pool)</h3>
+<p>The protocol stores liquidity in a central pool.</p>
+<h3 id="2-about-depositors-liquidity-providers">2) About depositors (liquidity providers)</h3>
+<p>A depositor is a liquidity provider. Depositors deposit TAO into the TaoFlow pool and receive a share of trading profits (25% allocated to depositors). Depositors also receive a proportion of Bittensor root subnet rewards.</p>
+<p>The deposited amount becomes available for borrowing; traders borrow liquidity from the pool.</p>
+<p><strong>Depositor details</strong>
+<img alt="Depositor Details" src="img/depositor-details.png" /></p>
+<p><strong>Address:</strong> Depositor's wallet address.</p>
+<p><strong>Balance:</strong> Depositor's wallet balance.</p>
+<p><strong>Total deposits:</strong> Depositor's deposit amount.</p>
+<p><strong>Deposit percentage:</strong> Depositor's percentage share of the pool.</p>
+<p><strong>Available amount:</strong> The withdrawable amount.</p>
+<p><strong>Locked balance:</strong> If a trader borrows from the pool and locks funds, that balance will be locked.</p>
+<p><strong>Join date:</strong> The date the depositor joined.</p>
+<h3 id="3-about-traders">3) About traders</h3>
+<p>A trader can add collateral to the protocol and borrow up to 10× their posted collateral. With borrowed funds, a trader can stake (open positions) on active subnets.</p>
+<p>If a trader stakes, 1/10 of their collateral will be locked. Traders can withdraw their available (free) collateral at any time, but they cannot withdraw locked collateral until they close (unstake) their positions.</p>
+<p>Traders can make profits or losses. Profit and loss are calculated after a trader closes a position.</p>
+<p>If a trader makes a profit, the profit is split between the trader, depositors, and TaoFlow protocol by 70:25:5.</p>
+<p>If a trader loses, their collateral will be reduced.</p>
+<p>Here are examples for illustration. Suppose you post 10 TAO as collateral and borrow 100 TAO.</p>
+<p>1) Success case:
+You stake all (100 TAO) to subnet 1. The staked amount increases to 110. You unstake.
+Your collateral becomes 17 ( = 10 + (110 - 100) × 0.7).</p>
+<p>2) Loss case:
+You stake all (100 TAO) to subnet 1. The staked amount decreases to 95. You unstake.
+Your collateral becomes 5 ( = 10 - (95 - 90)).</p>
+<p>If the staked amount falls to 90, TaoFlow automatically unstakes all positions and your collateral becomes 0.</p>
+<p><strong>Trader details</strong>
+<img alt="Trader Details" src="img/trader-detail.png" /></p>
+<p><strong>Address:</strong> Trader's wallet address.</p>
+<p><strong>Balance:</strong> Trader's wallet balance.</p>
+<p><strong>Collateral:</strong> Trader's collateral amount.</p>
+<p><strong>Borrow available:</strong> Amount available to borrow. If the pool balance exceeds 10 × the trader's collateral, the borrow available equals 10 × collateral. In the screenshot, borrow available is 0.25 because the pool balance is 0.1. Example expression:
+<code>borrow_available(0.25) = collateral(0.2) - staked(0.05) + pool_balance(0.1)</code></p>
+<p><strong>Staked:</strong> Staked amount.</p>
+<p><strong>Current stakes:</strong> Current staked balance.</p>
+<p><strong>Borrowed staked amount:</strong> Borrowed staked amount. In the screenshot the trader has 0.2 collateral and staked 0.05, so the borrowed amount is 0.</p>
+<p><strong>Pending borrow available:</strong> Pending borrowable amount. The trader can borrow up to 10 × collateral. In the screenshot, the pool balance isn't enough to cover it. Example:
+<code>pending(1.7) = collateral(0.2) × 10 - staked(0.05) - borrow_available(0.25)</code></p>
+<h2 id="3-references">3. References</h2>
+<p><a href="https://evm.taostats.io/address/0x3003D36b5D2633057b198E4f1C4aB8498367fb03">TaoFlow Pool Smart Contract</a> <br />
+<a href="https://evm.taostats.io/address/0xdd4d2BE756af9135Adb2170788Ea748020b5Ba33">TaoFlow LP Token Smart Contract</a> <br />
+<a href="https://taoflow.app">TaoFlow live site</a> <br /></p>
+<h2 id="4-faq">4. FAQ</h2>
+<h3 id="1-what-is-taoflow">1) What is TaoFlow?</h3>
+<p>TaoFlow is a DeFi platform on the Bittensor network that enables lending, borrowing, and leveraged trading using TAO as the primary collateral and tradable asset. Depositors provide liquidity, and traders can trade with up to 10× leverage via staking and unstaking credit generated by TaoFlow.</p>
+<h3 id="2-why-is-taoflow-useful-for-users">2) Why is TaoFlow useful for users?</h3>
+<p>The main purpose of TaoFlow is to provide a platform where traders can borrow TAO from holders to trade. Many people want to trade on Bittensor but have very small balances, while other users hold TAO but prefer not to trade. TaoFlow connects these users.</p>
+<h3 id="3-i-am-a-depositor-and-have-deposited-tao-can-i-withdraw-my-tao-anytime">3) I am a depositor and have deposited TAO. Can I withdraw my TAO anytime?</h3>
+<p>Yes. You can withdraw your funds at any time, provided those funds are not locked because of a trader's borrowing. If funds are locked, you must wait until they are unlocked (for example, when a trade finishes or another depositor adds liquidity). When the pool has sufficient liquidity, you can withdraw your funds.</p>
+<h3 id="4-i-am-a-trader-and-have-collateral-can-i-withdraw-my-collateral-anytime">4) I am a trader and have collateral. Can I withdraw my collateral anytime?</h3>
+<p>If you don't have any open positions (stakes), you can withdraw all of your collateral at any time. If you have open positions, you cannot withdraw locked collateral until you close (unstake) those positions.</p>
+<h3 id="5-how-is-yield-generated-on-taoflow">5) How is yield generated on TaoFlow?</h3>
+<p>Yield comes from two sources: (1) TAO staked to the root subnet, and (2) profit-sharing from successful leveraged trades executed by borrowers.</p>
+<h3 id="6-what-happens-if-a-trader-loses-money">6) What happens if a trader loses money?</h3>
+<p>Losses are first absorbed by the trader's collateral. Depositor funds are not exposed directly to trader downside. TaoFlow uses an oracle mechanism to monitor open positions in real time and automatically close (unstake) positions if losses exceed the trader's collateral.</p>
+<h3 id="7-how-much-can-traders-borrow">7) How much can traders borrow?</h3>
+<p>Traders can borrow up to 10× their posted collateral to stake into high-performing subnet tokens.</p>
+<h3 id="8-do-i-need-tao-to-use-the-platform">8) Do I need TAO to use the platform?</h3>
+<p>Yes. TAO is the native asset for deposits, borrowing, and trading. You'll need TAO in your wallet to interact with the protocol.</p>
               
             </div>
           </div><footer>
@@ -144,5 +371,5 @@ docs/
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2025-10-02 08:57:03.634508+00:00
+Build Date UTC : 2025-10-02 17:07:09.644266+00:00
 -->
